@@ -1,0 +1,22 @@
+{  
+	"name":"SandboxFix",
+	"version":"1.0",
+	"description":"Plugin podmieniający URL-e w sandbox Allegro linkujące do serwisu produkcyjnego.",
+	"manifest_version":2,
+	"author":"RTNET",
+	"content_scripts":[  
+		{  
+			"matches":[  
+				"https://allegro.pl.allegrosandbox.pl/*",
+				"http://allegro.pl.allegrosandbox.pl/*"
+			],
+			"js":[  
+				"jquery-2.2.4.min.js",
+				"SandboxFix.js"
+			]
+		}
+	],
+	"permissions":[  
+		
+	]
+}
